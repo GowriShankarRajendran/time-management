@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f9f9f9;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+button{
+    background-color: transparent;
+    color: #333;
+    border: 1px solid #3f51b5;
+    border-radius: 4px;
+    padding: 4px 12px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+button:hover, button.active{
+    background-color: #3f51b5;
+    color: #fff;
+}
+button[disabled]{
+    opacity: 0.3;
+    cursor: no-drop;
+}
+button[disabled]:hover{
+    background-color: transparent;
+    color: #333;
+}
+
+/* Task List Class Start */
+.taskList{
+    position: relative;
+    background-color: #f1f1f1;
+    padding: 40px 0px;
+}
+.taskListTable{
+    position: relative;
+}
+table{
+    position: relative;
+    width: 100%;
+    border-collapse: collapse;
+}
+table thead{
+    position: relative;
+}
+table thead tr{
+    position: relative;
+}
+table thead th{
+    background-color: #3F51B5;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: left;
+    border: 1px solid #586acb;
+    padding: 6px;
+}
+table tbody{
+    position: relative;
+}
+table tbody tr{
+    position: relative;
+}
+table tbody td{
+    background-color: #ffffff;
+    color: #222;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: left;
+    border: 1px solid #3f51b5;
+    padding: 6px;
+}
+.tableHeader{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.tableHeader h4{
+    color: #3f51b5;
+    font-size: 18px;
+    font-weight: 600;
+}
+.counter{
+    display: none;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 260px;
+    background-color: #fff;
+    border-radius: 6px;
+    border: 1px solid #3f51b5;
+    padding: 10px;
+    margin: 0px auto 10px;
+}
+.counter.show{
+    display: flex;
+}
+.counter.brake{
+    border: 1px solid #FFC107;
+}
+.counter button{
+    display: none;
+    background-color: transparent !important;
+    color: #3f51b5;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+}
+.counter button.showBtn{
+    display: block;
+}
+/* Task List Class End */
